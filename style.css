@@ -391,3 +391,31 @@ footer {
     color: #6b6455;
     text-align: center;
 }
+
+/* ---------- Tombol Pilih Paket Berlangganan ---------- */
+
+.paket-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn-pilih {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 16px;
+    background-color: var(--gold);
+    color: var(--ink);
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-pilih:hover {
+    background-color: var(--gold-bright);
+    color: var(--film-black);
+    transform: translateY(-2px);
+}
