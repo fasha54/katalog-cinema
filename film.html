@@ -32,16 +32,16 @@
       <!-- Link Anchor: navigasi cepat menuju bagian film tertentu di halaman yang sama -->
       <nav class="quick-nav">
         Lompat ke:
-        <a href="#Laskar-pelangi">Laskar Pelangi</a> |
-        <a href="#Aadc">AADC?</a> |
-        <a href="#Shawshank">Shawshank Redemption</a> |
-        <a href="#Interstellar">Interstellar</a>
+        <a href="#laskar-pelangi">Laskar Pelangi</a> |
+        <a href="#aadc">AADC?</a> |
+        <a href="#shawshank">Shawshank Redemption</a> |
+        <a href="#interstellar">Interstellar</a>
       </nav>
 
       <div class="film-entry" id="laskar-pelangi">
         <div
           class="poster"
-          style="background-image: url(&quot;poster/laskar-pelangi.jpg&quot;)"
+          style="background-image: url('poster/laskar-pelangi.jpg')"
         >
           <span class="initial">L</span>
         </div>
@@ -55,10 +55,6 @@
           <p class="price"><span class="ticket">Harga Tiket: &#36;7</span></p>
           <div class="trailer">
             <video controls width="380" preload="metadata" playsinline>
-              <source
-                src="video/Laskar-pelangi.mp4"
-                type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
-              />
               <source src="video/Laskar-pelangi.mp4" type="video/mp4" />
               Browser kamu tidak mendukung tag video.
             </video>
@@ -80,7 +76,7 @@
       <div class="film-entry" id="aadc">
         <div
           class="poster"
-          style="background-image: url(&quot;poster/aadc.jpg&quot;)"
+          style="background-image: url('poster/aadc.jpg')"
         >
           <span class="initial">A</span>
         </div>
@@ -92,7 +88,7 @@
           </p>
           <p class="price"><span class="ticket">Harga Tiket: &#36;6</span></p>
           <div class="trailer">
-            <video controls width="380">
+            <video controls width="380" preload="metadata" playsinline>
               <source src="video/Aadc.mp4" type="video/mp4" />
               Browser kamu tidak mendukung tag video.
             </video>
@@ -101,6 +97,8 @@
             <a
               class="imdb-link"
               href="https://www.imdb.com/title/tt0307920/?ref_=ext_shr_lnk"
+              target="_blank"
+              rel="noopener"
               >&#127916; Lihat di IMDb</a
             >
           </p>
@@ -111,7 +109,7 @@
       <div class="film-entry" id="shawshank">
         <div
           class="poster"
-          style="background-image: url(&quot;poster/shawshank.jpg&quot;)"
+          style="background-image: url('poster/shawshank.jpg')"
         >
           <span class="initial">S</span>
         </div>
@@ -124,7 +122,7 @@
           </p>
           <p class="price"><span class="ticket">Harga Tiket: &#36;8</span></p>
           <div class="trailer">
-            <video controls width="380">
+            <video controls width="380" preload="metadata" playsinline>
               <source src="video/Shawshank.mp4" type="video/mp4" />
               Browser kamu tidak mendukung tag video.
             </video>
@@ -145,7 +143,7 @@
       <div class="film-entry" id="interstellar">
         <div
           class="poster"
-          style="background-image: url(&quot;poster/interstellar.jpg&quot;)"
+          style="background-image: url('poster/interstellar.jpg')"
         >
           <span class="initial">I</span>
         </div>
@@ -158,7 +156,7 @@
           </p>
           <p class="price"><span class="ticket">Harga Tiket: &#36;12</span></p>
           <div class="trailer">
-            <video controls width="400">
+            <video controls width="380" preload="metadata" playsinline>
               <source src="video/Interstellar.mp4" type="video/mp4" />
               Browser kamu tidak mendukung tag video.
             </video>
