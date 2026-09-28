@@ -1,178 +1,41 @@
-<!doctype html>
-<html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Film - Katalog Sinema</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="masthead" id="top">
-      <h1>Katalog Sinema</h1>
-      <p>
-        Kumpulan film-film terkenal lintas era, dari drama klasik Indonesia
-        hingga karya sutradara Hollywood ternama.
-      </p>
-    </div>
-
-    <nav class="menu">
-      <a href="index.html">Home</a>
-      <a href="film.html" class="active">Film</a>
-      <a href="profil.html">Profil</a>
-      <a href="kontak.html">Kontak</a>
-    </nav>
-
-    <main>
-      <h2>Daftar Judul Film</h2>
-
-      <!-- Link Anchor: navigasi cepat menuju bagian film tertentu di halaman yang sama -->
-      <nav class="quick-nav">
-        Lompat ke:
-        <a href="#laskar-pelangi">Laskar Pelangi</a> |
-        <a href="#aadc">AADC?</a> |
-        <a href="#shawshank">Shawshank Redemption</a> |
-        <a href="#interstellar">Interstellar</a>
-      </nav>
-
-      <div class="film-entry" id="laskar-pelangi">
-        <div
-          class="poster"
-          style="background-image: url('poster/laskar-pelangi.jpg')"
-        >
-          <span class="initial">L</span>
-        </div>
-        <div class="film-info">
-          <h3>Laskar Pelangi <span class="year">2008</span></h3>
-          <p>
-            Film ini diangkat dari novel karya Andrea Hirata, menceritakan
-            perjuangan sepuluh anak di Belitung untuk mendapatkan pendidikan
-            layak di tengah keterbatasan.
-          </p>
-          <p class="price"><span class="ticket">Harga Tiket: &#36;7</span></p>
-          <div class="trailer">
-            <video controls width="380" preload="metadata" playsinline>
-              <source src="video/Laskar-pelangi.mp4" type="video/mp4" />
-              Browser kamu tidak mendukung tag video.
-            </video>
-          </div>
-          <!-- Link Absolute: menuju website lain di luar situs ini -->
-          <p>
-            <a
-              class="imdb-link"
-              href="https://www.imdb.com/title/tt1301264/?ref_=ext_shr_lnk"
-              target="_blank"
-              rel="noopener"
-              >&#127916; Lihat di IMDb</a
-            >
-          </p>
-        </div>
-      </div>
-      <hr class="divider" />
-
-      <div class="film-entry" id="aadc">
-        <div
-          class="poster"
-          style="background-image: url('poster/aadc.jpg')"
-        >
-          <span class="initial">A</span>
-        </div>
-        <div class="film-info">
-          <h3>Ada Apa Dengan Cinta? <span class="year">2002</span></h3>
-          <p>
-            Salah satu film romantis remaja paling ikonik di Indonesia,
-            mengisahkan kisah cinta Cinta dan Rangga semasa SMA.
-          </p>
-          <p class="price"><span class="ticket">Harga Tiket: &#36;6</span></p>
-          <div class="trailer">
-            <video controls width="380" preload="metadata" playsinline>
-              <source src="video/Aadc.mp4" type="video/mp4" />
-              Browser kamu tidak mendukung tag video.
-            </video>
-          </div>
-          <p>
-            <a
-              class="imdb-link"
-              href="https://www.imdb.com/title/tt0307920/?ref_=ext_shr_lnk"
-              target="_blank"
-              rel="noopener"
-              >&#127916; Lihat di IMDb</a
-            >
-          </p>
-        </div>
-      </div>
-      <hr class="divider" />
-
-      <div class="film-entry" id="shawshank">
-        <div class="poster" style="background-image: url('poster/shawshank.jpg')">
-          <span class="initial">S</span>
-        </div>
-        <div class="film-info">
-          <h3>The Shawshank Redemption <span class="year">1994</span></h3>
-          <p>
-            Menceritakan perjalanan seorang bankir bernama Andy Dufresne yang
-            dipenjara atas tuduhan pembunuhan yang tidak dilakukannya, serta
-            persahabatannya dengan seorang narapidana lain, Red.
-          </p>
-          <p class="price"><span class="ticket">Harga Tiket: &#36;8</span></p>
-          <div class="trailer">
-            <video controls width="380" preload="metadata" playsinline>
-              <source src="video/Shawshank.mp4" type="video/mp4" />
-              Browser kamu tidak mendukung tag video.
-            </video>
-          </div>
-          <p>
-            <a
-              class="imdb-link"
-              href="https://www.imdb.com/title/tt0111161/"
-              target="_blank"
-              rel="noopener"
-              >&#127916; Lihat di IMDb</a
-            >
-          </p>
-        </div>
-      </div>
-      <hr class="divider" />
-
-      <div class="film-entry" id="interstellar">
-        <div
-          class="poster"
-          style="background-image: url('poster/interstellar.jpg')"
-        >
-          <span class="initial">I</span>
-        </div>
-        <div class="film-info">
-          <h3>Interstellar <span class="year">2014</span></h3>
-          <p>
-            Sebuah film fiksi ilmiah tentang sekelompok astronot yang melakukan
-            perjalanan melintasi lubang cacing demi mencari planet baru yang
-            layak huni bagi manusia.
-          </p>
-          <p class="price"><span class="ticket">Harga Tiket: &#36;12</span></p>
-          <div class="trailer">
-            <video controls width="380" preload="metadata" playsinline>
-              <source src="video/Interstellar.mp4" type="video/mp4" />
-              Browser kamu tidak mendukung tag video.
-            </video>
-          </div>
-          <p>
-            <a
-              class="imdb-link"
-              href="https://www.imdb.com/find/?q=Interstellar"
-              target="_blank"
-              rel="noopener"
-              >&#127916; Lihat di IMDb</a
-            >
-          </p>
-        </div>
-      </div>
-
-      <p class="back-to-top"><a href="#top">&uarr; Kembali ke atas</a></p>
-    </main>
-
-    <footer>Katalog Sinema &copy; 2026. Seluruh hak cipta dilindungi.</footer>
-  </body>
-</html>
+<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><title>Film - Sinema</title></head><body>
+<table class="menu" border="0" cellpadding="0" cellspacing="0"><tr><td><a class="logo" href="index.html">SINEMA</a></td><td class="links" align="right"><a href="index.html"><svg class="ic" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V21a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg><span>Home</span></a><a href="film.html" class="active"><svg class="ic" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="18" rx="2.5"/><path d="M7 3v18M17 3v18M2 8h5M2 16h5M17 8h5M17 16h5"/></svg><span>Film</span></a><a href="profil.html"><svg class="ic" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Profil</span></a><a href="kontak.html"><svg class="ic" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg><span>Kontak</span></a></td></tr></table>
+<table class="tata" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr><td class="hero kecil" valign="middle" align="left"><h1>Daftar Film</h1><p>Empat judul pilihan lintas era, lengkap dengan trailer dan harga tiket.</p></td></tr>
+<tr><td class="isi" valign="top"><table class="lebar" border="0" cellpadding="0" cellspacing="0"><tr><td>
+<a id="top"></a><div class="navcepat">Lompat ke:<br><a class="chip" href="#laskar-pelangi">Laskar Pelangi</a><a class="chip" href="#aadc">AADC?</a><a class="chip" href="#shawshank">Shawshank Redemption</a><a class="chip" href="#interstellar">Interstellar</a></div>
+<table class="film" id="laskar-pelangi" border="0" cellpadding="0" cellspacing="0">
+<tr><td class="pos" rowspan="3" valign="top"><div class="poster" style="background-image:url(poster/laskar-pelangi.jpg)"><span class="initial">L</span></div></td>
+<td valign="top"><h3>Laskar Pelangi <span class="year">2008</span></h3><p>Diangkat dari novel Andrea Hirata, menceritakan perjuangan sepuluh anak di Belitung untuk mendapatkan pendidikan layak di tengah keterbatasan.</p>
+<table class="spec" border="0" cellpadding="0" cellspacing="0"><tr><th align="left">Sutradara</th><td>Riri Riza</td></tr><tr><th align="left">Genre</th><td><i>Drama</i></td></tr><tr><th align="left">Durasi</th><td>2j 4m</td></tr><tr><th align="left">Rating</th><td><span class="rating">&#9733; 7.8</span> / 10</td></tr><tr><th align="left">Harga Tiket</th><td><span class="ticket" style="margin:0">$7</span></td></tr></table></td></tr>
+<tr><td valign="top"><video controls preload="metadata" playsinline><source src="video/Laskar-pelangi.mp4" type="video/mp4">Browser kamu tidak mendukung tag video.</video></td></tr>
+<tr><td valign="top"><a class="imdb" href="https://www.imdb.com/title/tt1301264/" target="_blank" rel="noopener">&#127916; Lihat di IMDb</a></td></tr>
+<tr><td class="rek" colspan="2"><table class="data" border="1" cellpadding="8" cellspacing="0"><caption>Rekomendasi film serupa dengan <b>Laskar Pelangi</b></caption><thead><tr><th>Poster</th><th>Judul</th><th>Genre</th><th>Rating</th></tr></thead><tbody><tr><td><div class="poster mini" style="background-image:url(poster/aadc.jpg)"><span class="initial">A</span></div></td><td><a href="#aadc"><b>Ada Apa Dengan Cinta?</b></a></td><td>Drama, Romantis</td><td><span class="rating">&#9733; 7.4</span></td></tr><tr><td><div class="poster mini" style="background-image:url(poster/shawshank.jpg)"><span class="initial">S</span></div></td><td><a href="#shawshank"><b>The Shawshank Redemption</b></a></td><td>Drama</td><td><span class="rating">&#9733; 9.3</span></td></tr><tr><td><div class="poster mini" style="background-image:url(poster/interstellar.jpg)"><span class="initial">I</span></div></td><td><a href="#interstellar"><b>Interstellar</b></a></td><td>Fiksi Ilmiah, Petualangan, Drama</td><td><span class="rating">&#9733; 8.7</span></td></tr></tbody><tfoot><tr><td colspan="4">Klik judul untuk melihat detail film. Rating dari IMDb.</td></tr></tfoot></table></td></tr>
+</table>
+<table class="film" id="aadc" border="0" cellpadding="0" cellspacing="0">
+<tr><td class="pos" rowspan="3" valign="top"><div class="poster" style="background-image:url(poster/aadc.jpg)"><span class="initial">A</span></div></td>
+<td valign="top"><h3>Ada Apa Dengan Cinta? <span class="year">2002</span></h3><p>Salah satu film romantis remaja paling ikonik di Indonesia, mengisahkan cinta Cinta dan Rangga semasa SMA.</p>
+<table class="spec" border="0" cellpadding="0" cellspacing="0"><tr><th align="left">Sutradara</th><td>Rudy Soedjarwo</td></tr><tr><th align="left">Genre</th><td><i>Drama, Romantis</i></td></tr><tr><th align="left">Durasi</th><td>1j 52m</td></tr><tr><th align="left">Rating</th><td><span class="rating">&#9733; 7.4</span> / 10</td></tr><tr><th align="left">Harga Tiket</th><td><span class="ticket" style="margin:0">$6</span></td></tr></table></td></tr>
+<tr><td valign="top"><video controls preload="metadata" playsinline><source src="video/Aadc.mp4" type="video/mp4">Browser kamu tidak mendukung tag video.</video></td></tr>
+<tr><td valign="top"><a class="imdb" href="https://www.imdb.com/title/tt0307920/" target="_blank" rel="noopener">&#127916; Lihat di IMDb</a></td></tr>
+<tr><td class="rek" colspan="2"><table class="data" border="1" cellpadding="8" cellspacing="0"><caption>Rekomendasi film serupa dengan <b>Ada Apa Dengan Cinta?</b></caption><thead><tr><th>Poster</th><th>Judul</th><th>Genre</th><th>Rating</th></tr></thead><tbody><tr><td><div class="poster mini" style="background-image:url(poster/laskar-pelangi.jpg)"><span class="initial">L</span></div></td><td><a href="#laskar-pelangi"><b>Laskar Pelangi</b></a></td><td>Drama</td><td><span class="rating">&#9733; 7.8</span></td></tr><tr><td><div class="poster mini" style="background-image:url(poster/shawshank.jpg)"><span class="initial">S</span></div></td><td><a href="#shawshank"><b>The Shawshank Redemption</b></a></td><td>Drama</td><td><span class="rating">&#9733; 9.3</span></td></tr><tr><td><div class="poster mini" style="background-image:url(poster/interstellar.jpg)"><span class="initial">I</span></div></td><td><a href="#interstellar"><b>Interstellar</b></a></td><td>Fiksi Ilmiah, Petualangan, Drama</td><td><span class="rating">&#9733; 8.7</span></td></tr></tbody><tfoot><tr><td colspan="4">Klik judul untuk melihat detail film. Rating dari IMDb.</td></tr></tfoot></table></td></tr>
+</table>
+<table class="film" id="shawshank" border="0" cellpadding="0" cellspacing="0">
+<tr><td class="pos" rowspan="3" valign="top"><div class="poster" style="background-image:url(poster/shawshank.jpg)"><span class="initial">S</span></div></td>
+<td valign="top"><h3>The Shawshank Redemption <span class="year">1994</span></h3><p>Andy Dufresne, bankir yang dipenjara atas tuduhan pembunuhan yang tidak dilakukannya, menjalin persahabatan dengan narapidana bernama Red.</p>
+<table class="spec" border="0" cellpadding="0" cellspacing="0"><tr><th align="left">Sutradara</th><td>Frank Darabont</td></tr><tr><th align="left">Genre</th><td><i>Drama</i></td></tr><tr><th align="left">Durasi</th><td>2j 22m</td></tr><tr><th align="left">Rating</th><td><span class="rating">&#9733; 9.3</span> / 10</td></tr><tr><th align="left">Harga Tiket</th><td><span class="ticket" style="margin:0">$8</span></td></tr></table></td></tr>
+<tr><td valign="top"><video controls preload="metadata" playsinline><source src="video/Shawshank.mp4" type="video/mp4">Browser kamu tidak mendukung tag video.</video></td></tr>
+<tr><td valign="top"><a class="imdb" href="https://www.imdb.com/title/tt0111161/" target="_blank" rel="noopener">&#127916; Lihat di IMDb</a></td></tr>
+<tr><td class="rek" colspan="2"><table class="data" border="1" cellpadding="8" cellspacing="0"><caption>Rekomendasi film serupa dengan <b>The Shawshank Redemption</b></caption><thead><tr><th>Poster</th><th>Judul</th><th>Genre</th><th>Rating</th></tr></thead><tbody><tr><td><div class="poster mini" style="background-image:url(poster/laskar-pelangi.jpg)"><span class="initial">L</span></div></td><td><a href="#laskar-pelangi"><b>Laskar Pelangi</b></a></td><td>Drama</td><td><span class="rating">&#9733; 7.8</span></td></tr><tr><td><div class="poster mini" style="background-image:url(poster/interstellar.jpg)"><span class="initial">I</span></div></td><td><a href="#interstellar"><b>Interstellar</b></a></td><td>Fiksi Ilmiah, Petualangan, Drama</td><td><span class="rating">&#9733; 8.7</span></td></tr><tr><td><div class="poster mini" style="background-image:url(poster/aadc.jpg)"><span class="initial">A</span></div></td><td><a href="#aadc"><b>Ada Apa Dengan Cinta?</b></a></td><td>Drama, Romantis</td><td><span class="rating">&#9733; 7.4</span></td></tr></tbody><tfoot><tr><td colspan="4">Klik judul untuk melihat detail film. Rating dari IMDb.</td></tr></tfoot></table></td></tr>
+</table>
+<table class="film" id="interstellar" border="0" cellpadding="0" cellspacing="0">
+<tr><td class="pos" rowspan="3" valign="top"><div class="poster" style="background-image:url(poster/interstellar.jpg)"><span class="initial">I</span></div></td>
+<td valign="top"><h3>Interstellar <span class="year">2014</span></h3><p>Sekelompok astronot melintasi lubang cacing demi mencari planet baru yang layak huni bagi manusia.</p>
+<table class="spec" border="0" cellpadding="0" cellspacing="0"><tr><th align="left">Sutradara</th><td>Christopher Nolan</td></tr><tr><th align="left">Genre</th><td><i>Fiksi Ilmiah, Petualangan, Drama</i></td></tr><tr><th align="left">Durasi</th><td>2j 49m</td></tr><tr><th align="left">Rating</th><td><span class="rating">&#9733; 8.7</span> / 10</td></tr><tr><th align="left">Harga Tiket</th><td><span class="ticket" style="margin:0">$12</span></td></tr></table></td></tr>
+<tr><td valign="top"><video controls preload="metadata" playsinline><source src="video/Interstellar.mp4" type="video/mp4">Browser kamu tidak mendukung tag video.</video></td></tr>
+<tr><td valign="top"><a class="imdb" href="https://www.imdb.com/title/tt0816692/" target="_blank" rel="noopener">&#127916; Lihat di IMDb</a></td></tr>
+<tr><td class="rek" colspan="2"><table class="data" border="1" cellpadding="8" cellspacing="0"><caption>Rekomendasi film serupa dengan <b>Interstellar</b></caption><thead><tr><th>Poster</th><th>Judul</th><th>Genre</th><th>Rating</th></tr></thead><tbody><tr><td><div class="poster mini" style="background-image:url(poster/shawshank.jpg)"><span class="initial">S</span></div></td><td><a href="#shawshank"><b>The Shawshank Redemption</b></a></td><td>Drama</td><td><span class="rating">&#9733; 9.3</span></td></tr><tr><td><div class="poster mini" style="background-image:url(poster/laskar-pelangi.jpg)"><span class="initial">L</span></div></td><td><a href="#laskar-pelangi"><b>Laskar Pelangi</b></a></td><td>Drama</td><td><span class="rating">&#9733; 7.8</span></td></tr><tr><td><div class="poster mini" style="background-image:url(poster/aadc.jpg)"><span class="initial">A</span></div></td><td><a href="#aadc"><b>Ada Apa Dengan Cinta?</b></a></td><td>Drama, Romantis</td><td><span class="rating">&#9733; 7.4</span></td></tr></tbody><tfoot><tr><td colspan="4">Klik judul untuk melihat detail film. Rating dari IMDb.</td></tr></tfoot></table></td></tr>
+</table>
+<p align="right"><a href="#top">&uarr; Kembali ke atas</a></p>
+</td></tr></table></td></tr>
+<tr><td class="foot" align="center">Katalog Sinema &mdash; proyek tugas kuliah Pemrograman Web, Universitas Pamulang.<br>Poster dan trailer film adalah milik pemegang hak masing-masing dan dipakai untuk keperluan belajar.</td></tr></table></body></html>
