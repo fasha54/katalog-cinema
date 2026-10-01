@@ -157,24 +157,29 @@ h2.judul{font-size:26px;margin:44px 0 16px}
 /* 1. Bar Pencarian & Filter Genre */
 .filter-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:16px 20px;margin-bottom:28px}
 .search-box{position:relative;flex:1;min-width:240px}
-.search-box input{width:100%;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px 16px 12px 42px;color:var(--text);font:inherit;font-size:14px;outline:none;transition:border-color .25s,box-shadow .25s}
-.search-box input:focus{border-color:var(--red);box-shadow:0 0 0 3px #e5091433}
-.search-box .ic-search{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none}
+.search-box input{width:100%;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px 16px 12px 42px;color:var(--text);font:inherit;font-size:14px;outline:none;transition:all .3s cubic-bezier(0.2, 0.8, 0.2, 1)}
+.search-box input:hover{border-color:#ffffff33;background:#22222b}
+.search-box input:focus{border-color:var(--red2);background:#252530;transform:translateY(-1px);box-shadow:0 0 0 4px #e509142b, 0 8px 24px #e5091422}
+.search-box .ic-search{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none;transition:color .3s}
+.search-box input:focus + .ic-search{color:var(--red2)}
 .genre-filters{display:flex;flex-wrap:wrap;gap:8px}
-.filter-btn{background:var(--card2);border:1px solid var(--line);color:var(--text);padding:9px 16px;border-radius:99px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:.2s}
-.filter-btn:hover{background:#ffffff1a;border-color:var(--muted)}
-.filter-btn.active{background:var(--red);border-color:var(--red);color:#fff}
+.filter-btn{background:var(--card2);border:1px solid var(--line);color:var(--text);padding:9px 16px;border-radius:99px;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;transition:all .25s ease}
+.filter-btn:hover{background:#ffffff1a;border-color:var(--muted);transform:translateY(-1px)}
+.filter-btn.active{background:var(--red);border-color:var(--red);color:#fff;box-shadow:0 4px 14px #e5091455}
 .filter-count{font-size:13px;color:var(--muted);width:100%;margin-top:4px}
 
 /* 2. Formulir Pemesanan Tiket & Langganan Interaktif */
-.form-box{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px;margin-top:20px}
+.form-box{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px;margin-top:20px;transition:box-shadow .3s}
+.form-box:hover{border-color:#32323f}
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .form-group{margin-bottom:18px}
 .form-group.full{grid-column:1 / -1}
-.form-group label{display:block;margin-bottom:8px;font-weight:600;font-size:14px;color:#e6e6ec}
+.form-group label{display:block;margin-bottom:8px;font-weight:600;font-size:14px;color:#e6e6ec;transition:color .25s}
+.form-group:focus-within label{color:#fff}
 .form-group label .req{color:var(--red)}
-.form-control{width:100%;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px 16px;color:var(--text);font:inherit;font-size:14px;outline:none;transition:border-color .25s,box-shadow .25s}
-.form-control:focus{border-color:var(--red);box-shadow:0 0 0 3px #e5091433}
+.form-control{width:100%;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px 16px;color:var(--text);font:inherit;font-size:14px;outline:none;transition:all .3s cubic-bezier(0.2, 0.8, 0.2, 1)}
+.form-control:hover{border-color:#ffffff33;background:#22222b}
+.form-control:focus{border-color:var(--red2);background:#252530;transform:translateY(-1px);box-shadow:0 0 0 4px #e509142b, 0 8px 24px #e5091422}
 .form-control option{background:var(--card2);color:var(--text)}
 .summary-card{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:20px;margin:20px 0}
 .summary-card h4{margin:0 0 14px;font-size:16px;color:#fff}
