@@ -41,11 +41,11 @@
 <h2 class="judul" id="paket">Paket Berlangganan</h2>
 <p class="muted">Pilih paket yang sesuai kebutuhan nonton kamu.</p>
 <table class="paket" border="0" cellpadding="0" cellspacing="18"><tr>
-<td valign="top"><h3>Reguler</h3><span class="ticket">$5 / bulan</span><ol type="1"><li>Akses 10 judul film pilihan</li><li>Kualitas HD</li><li>1 perangkat</li></ol><p class="cta"><a class="btn kecil" href="kontak.html">Hubungi untuk pesan</a></p></td>
-<td valign="top"><h3>Premium</h3><span class="ticket">$9 / bulan</span><ol type="A"><li>Seluruh katalog film</li><li>Kualitas Full HD</li><li>2 perangkat sekaligus</li><li>Unduh untuk offline</li></ol><p class="cta"><a class="btn kecil" href="kontak.html">Hubungi untuk pesan</a></p></td>
-<td valign="top"><h3>VIP</h3><span class="ticket">$15 / bulan</span><ol type="I"><li>Katalog + tayang perdana</li><li>Kualitas 4K Ultra HD</li><li>4 perangkat sekaligus</li><li>Unduh offline tanpa batas</li><li>Bebas iklan</li></ol><p class="cta"><a class="btn kecil" href="kontak.html">Hubungi untuk pesan</a></p></td>
+<td valign="top"><h3>Reguler</h3><span class="ticket">$5 / bulan</span><ol type="1"><li>Akses 10 judul film pilihan</li><li>Kualitas HD</li><li>1 perangkat</li></ol><p class="cta"><a class="btn kecil" href="kontak.html?paket=reguler">Pesan Paket Reguler</a></p></td>
+<td valign="top"><h3>Premium</h3><span class="ticket">$9 / bulan</span><ol type="A"><li>Seluruh katalog film</li><li>Kualitas Full HD</li><li>2 perangkat sekaligus</li><li>Unduh untuk offline</li></ol><p class="cta"><a class="btn kecil" href="kontak.html?paket=premium">Pesan Paket Premium</a></p></td>
+<td valign="top"><h3>VIP</h3><span class="ticket">$15 / bulan</span><ol type="I"><li>Katalog + tayang perdana</li><li>Kualitas 4K Ultra HD</li><li>4 perangkat sekaligus</li><li>Unduh offline tanpa batas</li><li>Bebas iklan</li></ol><p class="cta"><a class="btn kecil" href="kontak.html?paket=vip">Pesan Paket VIP</a></p></td>
 </tr></table>
-<div class="kotak" style="margin-top:24px"><b>Tertarik berlangganan?</b> Hubungi kami lewat halaman <a href="kontak.html">Kontak</a> dan sebutkan paket pilihan kamu. Kami akan balas dengan konfirmasi dan info pembayaran.</div>
+<div class="kotak" style="margin-top:24px"><b>Tertarik berlangganan?</b> Hubungi kami lewat formulir online di halaman <a href="kontak.html">Kontak</a> dan pilih paket yang kamu inginkan untuk kalkulasi instan.</div>
 <h2 class="judul">Bandingkan Paket</h2>
 <table class="data sama" border="1" cellpadding="8" cellspacing="0">
 <caption>Perbandingan fitur tiap paket berlangganan</caption>
@@ -60,4 +60,21 @@
 <tfoot><tr><td>Harga</td><td>$5</td><td>$9</td><td>$15</td></tr></tfoot>
 </table>
 </td></tr></table></td></tr>
-<tr><td class="foot" align="center">Katalog Sinema &mdash; proyek tugas kuliah Pemrograman Web, Universitas Pamulang.<br>Poster dan trailer film adalah milik pemegang hak masing-masing dan dipakai untuk keperluan belajar.</td></tr></table></body></html>
+<tr><td class="foot" align="center">Katalog Sinema &mdash; proyek tugas kuliah Pemrograman Web, Universitas Pamulang.<br>Poster dan trailer film adalah milik pemegang hak masing-masing dan dipakai untuk keperluan belajar.</td></tr></table>
+<!-- Modal Trailer Global -->
+<div id="modalTrailer" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="modal-container">
+    <div class="modal-header">
+      <h3 id="modalJudul">Cuplikan Trailer</h3>
+      <button type="button" class="modal-close" aria-label="Tutup Modal">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-video-wrap">
+        <video id="modalVideo" controls preload="metadata"></video>
+      </div>
+      <p style="margin:0;color:var(--muted);font-size:13px">Klik tombol silang, area luar, atau tekan ESC untuk menutup cuplikan.</p>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body></html>

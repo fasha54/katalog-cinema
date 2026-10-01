@@ -13,10 +13,75 @@
 </tbody></table>
 <h2 class="judul">Cara Berlangganan</h2>
 <div class="kotak"><ol>
-<li>Pilih paket yang kamu mau di <a href="index.html#paket">halaman Home</a>.</li>
-<li>Kirim email berisi <b>nama lengkap</b> dan <b>paket pilihan</b>.<br><a class="btn kecil" style="margin-top:8px" href="mailto:fashafahlapi545@gmail.com?subject=Berlangganan%20Paket%20Sinema">Kirim Email Sekarang</a></li>
+<li>Pilih paket yang kamu mau di <a href="index.html#paket">halaman Home</a> atau gunakan formulir otomatis di bawah.</li>
+<li>Kirim email atau isi <b>formulir interaktif</b> di bawah untuk mendapatkan kalkulasi biaya langsung.<br><a class="btn kecil" style="margin-top:8px" href="mailto:fashafahlapi545@gmail.com?subject=Berlangganan%20Paket%20Sinema">Kirim Email Manual</a></li>
 <li>Kami balas dengan konfirmasi dan info pembayaran.</li>
 <li>Setelah pembayaran diterima, akunmu aktif dan siap dipakai nonton.</li>
 </ol></div>
+
+<!-- Fitur 2: Formulir Pemesanan Tiket & Langganan Interaktif -->
+<h2 class="judul" id="pesan">Pemesanan Online Cepat</h2>
+<p class="muted">Pesan paket streaming atau beli tiket nonton film secara interaktif dengan kalkulasi harga langsung.</p>
+<div class="form-box">
+  <form id="formPemesanan">
+    <div class="form-grid">
+      <div class="form-group">
+        <label for="orderNama">Nama Lengkap <span class="req">*</span></label>
+        <input type="text" id="orderNama" class="form-control" placeholder="Contoh: Fasha Fahlapi" required>
+      </div>
+      <div class="form-group">
+        <label for="orderEmail">Alamat Email <span class="req">*</span></label>
+        <input type="email" id="orderEmail" class="form-control" placeholder="nama@email.com" required>
+      </div>
+      <div class="form-group">
+        <label for="orderTipe">Kategori Layanan <span class="req">*</span></label>
+        <select id="orderTipe" class="form-control">
+          <option value="paket">Paket Berlangganan Streaming</option>
+          <option value="tiket">Beli Tiket Per Judul Film</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="orderItem">Pilihan Paket / Judul Film <span class="req">*</span></label>
+        <select id="orderItem" class="form-control">
+          <!-- Diisi dinamis oleh JavaScript -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="orderQty">Durasi (Bulan) / Jumlah Tiket <span class="req">*</span></label>
+        <input type="number" id="orderQty" class="form-control" value="1" min="1" max="12" required>
+      </div>
+      <div class="form-group">
+        <label for="orderMetode">Metode Pembayaran</label>
+        <select id="orderMetode" class="form-control">
+          <option value="qris">QRIS (GoPay, OVO, ShopeePay, DANA)</option>
+          <option value="bca">Transfer Virtual Account Bank BCA</option>
+          <option value="mandiri">Transfer Virtual Account Bank Mandiri</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Ringkasan Kalkulasi Real-time -->
+    <div class="summary-card">
+      <h4>Rincian Biaya Transaksi</h4>
+      <div class="summary-row">
+        <span>Produk Terpilih:</span>
+        <strong id="ringkasanItem">-</strong>
+      </div>
+      <div class="summary-row">
+        <span>Harga Satuan x Durasi/Tiket:</span>
+        <span id="ringkasanHarga">$0</span>
+      </div>
+      <div class="summary-row total">
+        <span>Total Pembayaran:</span>
+        <span id="ringkasanTotal">$0</span>
+      </div>
+    </div>
+
+    <button type="submit" class="btn">&#128179; Buat Pesanan Sekarang</button>
+  </form>
+</div>
+
 </td></tr></table></td></tr>
-<tr><td class="foot" align="center">Katalog Sinema &mdash; proyek tugas kuliah Pemrograman Web, Universitas Pamulang.<br>Poster dan trailer film adalah milik pemegang hak masing-masing dan dipakai untuk keperluan belajar.</td></tr></table></body></html>
+<tr><td class="foot" align="center">Katalog Sinema &mdash; proyek tugas kuliah Pemrograman Web, Universitas Pamulang.<br>Poster dan trailer film adalah milik pemegang hak masing-masing dan dipakai untuk keperluan belajar.</td></tr></table>
+<script src="script.js"></script>
+</body></html>
