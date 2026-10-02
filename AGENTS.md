@@ -39,4 +39,5 @@ Setiap modifikasi atau penambahan fitur baru WAJIB merujuk pada standar modul pe
 ## 4. Guardrails (Strict Do's & Don'ts)
 - **DILARANG:** Memasukkan framework CSS eksternal (seperti Tailwind CSS, Bootstrap) atau framework JS (React, Angular). Semua tugas harus berupa HTML, CSS murni, dan Vanilla JS sesuai kurikulum UNPAM.
 - **DILARANG:** Mengubah identitas pembuat (Fasha Fahlapi / Universitas Pamulang) pada footer dan halaman profil kecuali diinstruksikan.
+- **DILARANG:** Melakukan `git push` ke remote GitHub secara otomatis tanpa instruksi atau persetujuan eksplisit dari pengguna.
 - **WAJIB:** Menjaga format tautan navigasi antar-halaman (`index.html`, `film.html`, `profil.html`, `kontak.html`) tetap sinkron di seluruh file.
