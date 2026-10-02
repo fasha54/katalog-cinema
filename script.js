@@ -161,6 +161,13 @@ function initOrderForm() {
       return;
     }
 
+    // Validasi format email secara defensif
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert('Mohon masukkan format alamat email yang valid (contoh: nama@email.com).');
+      return;
+    }
+
     const konfirmasi = confirm(
       `KONFIRMASI PESANAN SINEMA:\n\n` +
       `Nama: ${nama}\n` +
@@ -194,6 +201,11 @@ function initModalTrailer() {
   const closeBtn = modal.querySelector('.modal-close');
 
   function openTrailer(src, title) {
+    // Defensive Check: Cegah injeksi URL berbahaya (hanya izinkan video/ lokal)
+    if (!src || typeof src !== 'string' || !src.startsWith('video/')) {
+      console.warn('Sumber video tidak valid atau di luar direktori aman.');
+      return;
+    }
     if (modalTitle) modalTitle.textContent = title || 'Cuplikan Trailer';
     if (modalVideo) {
       modalVideo.src = src;
@@ -286,15 +298,21 @@ function initReviews() {
         reviewList.innerHTML = '<p class="review-empty">Belum ada ulasan. Jadilah yang pertama memberikan ulasan!</p>';
         return;
       }
-      reviewList.innerHTML = reviews.map(r => `
-        <div class="review-card">
-          <div class="review-top">
-            <span class="review-user">${escapeHtml(r.user)}</span>
-            <span class="review-stars">${'&#9733;'.repeat(r.rating)}${'&#9734;'.repeat(5 - r.rating)}</span>
+      reviewList.innerHTML = reviews.map(r => {
+        // Defensive Clamping: Lindungi dari nilai rating rusak atau manipulasi di DevTools
+        const safeRating = Math.max(1, Math.min(5, parseInt(r.rating, 10) || 5));
+        const safeUser = escapeHtml(String(r.user || 'Anonim'));
+        const safeComment = escapeHtml(String(r.comment || ''));
+        return `
+          <div class="review-card">
+            <div class="review-top">
+              <span class="review-user">${safeUser}</span>
+              <span class="review-stars">${'&#9733;'.repeat(safeRating)}${'&#9734;'.repeat(5 - safeRating)}</span>
+            </div>
+            <p class="review-comment">${safeComment}</p>
           </div>
-          <p class="review-comment">${escapeHtml(r.comment)}</p>
-        </div>
-      `).join('');
+        `;
+      }).join('');
     }
 
     function escapeHtml(text) {
